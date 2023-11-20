@@ -1,12 +1,3 @@
-<<<<<<< HEAD
-SELECT cars.brand,
-       cars.model,
-       COUNT(*) AS amount
-FROM registered_cars AS cars
-WHERE cars.seats = 2
-GROUP BY 1,2
-ORDER BY 3 DESC
-=======
 -- Find the 2-seater car (brand and model) that occurs the most in the table
 SELECT cars.brand,
        cars.model,
@@ -16,4 +7,3 @@ WHERE cars.seats = 2
 GROUP BY 1,2
 ORDER BY 3 DESC
 LIMIT 5;
->>>>>>> ad127ab9bf38e121f0c967dcb024c1e101c7b7a3
